@@ -1,0 +1,652 @@
+[
+  {
+    "id": "f1",
+    "domain": "Access Control",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization enforce multi-factor authentication (MFA) for all users accessing CUI systems?",
+    "controls": ["AC.L2-3.5.3"],
+    "opts": [
+      "Yes — MFA enforced on all CUI systems",
+      "MFA on most systems, with exceptions",
+      "MFA on some systems only",
+      "No MFA in place"
+    ]
+  },
+  {
+    "id": "f2",
+    "domain": "Access Control",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are user accounts reviewed at least quarterly to ensure only authorized personnel have access to CUI?",
+    "controls": ["AC.L2-3.1.1"],
+    "opts": [
+      "Yes — quarterly reviews with documentation",
+      "Reviews occur but not on a regular schedule",
+      "Reviews are ad hoc or informal",
+      "No account reviews performed"
+    ]
+  },
+  {
+    "id": "f3",
+    "domain": "Access Control",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization limit system access to authorized transactions and functions?",
+    "controls": ["AC.L2-3.1.2"],
+    "opts": [
+      "Yes — role-based access controls enforced",
+      "Partially implemented",
+      "Planned but not yet implemented",
+      "No access restrictions beyond authentication"
+    ]
+  },
+  {
+    "id": "f4",
+    "domain": "Access Control",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is remote access to organizational systems monitored and controlled?",
+    "controls": ["AC.L2-3.1.12"],
+    "opts": [
+      "Yes — VPN with MFA and session monitoring",
+      "VPN in place but limited monitoring",
+      "Remote access allowed with basic controls",
+      "No remote access controls"
+    ]
+  },
+  {
+    "id": "f5",
+    "domain": "Access Control",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are wireless access points authorized, monitored, and secured?",
+    "controls": ["AC.L2-3.1.16"],
+    "opts": [
+      "Yes — all APs documented, encrypted, and monitored",
+      "Most APs secured, some gaps",
+      "Basic Wi-Fi security only",
+      "Wireless not managed"
+    ]
+  },
+  {
+    "id": "f6",
+    "domain": "Awareness & Training",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Do all employees with access to CUI complete annual cybersecurity awareness training?",
+    "controls": ["AT.L2-3.2.1"],
+    "opts": [
+      "Yes — annual training with completion records",
+      "Training provided but not consistently tracked",
+      "Occasional training, no formal program",
+      "No cybersecurity training program"
+    ]
+  },
+  {
+    "id": "f7",
+    "domain": "Awareness & Training",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are personnel trained to recognize and report potential insider threats?",
+    "controls": ["AT.L2-3.2.3"],
+    "opts": [
+      "Yes — insider threat training included in security program",
+      "General awareness but no specific training",
+      "Informal guidance only",
+      "No insider threat training"
+    ]
+  },
+  {
+    "id": "f8",
+    "domain": "Audit & Accountability",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization create and retain system audit logs sufficient to establish accountability?",
+    "controls": ["AU.L2-3.3.1"],
+    "opts": [
+      "Yes — comprehensive logging with defined retention",
+      "Logging enabled but retention is inconsistent",
+      "Minimal logging on some systems",
+      "No audit logging"
+    ]
+  },
+  {
+    "id": "f9",
+    "domain": "Audit & Accountability",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are audit logs reviewed regularly for indicators of compromise or unauthorized activity?",
+    "controls": ["AU.L2-3.3.4"],
+    "opts": [
+      "Yes — automated SIEM with regular human review",
+      "Periodic manual review of logs",
+      "Logs reviewed only after incidents",
+      "Logs not reviewed"
+    ]
+  },
+  {
+    "id": "f10",
+    "domain": "Audit & Accountability",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are audit logs protected from unauthorized access and modification?",
+    "controls": ["AU.L2-3.3.8"],
+    "opts": [
+      "Yes — logs stored in immutable, access-controlled storage",
+      "Access restricted but not immutable",
+      "Basic access controls only",
+      "Logs not protected"
+    ]
+  },
+  {
+    "id": "f11",
+    "domain": "Configuration Management",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization maintain baseline configurations for all IT systems?",
+    "controls": ["CM.L2-3.4.1"],
+    "opts": [
+      "Yes — documented baselines with change tracking",
+      "Baselines for some systems",
+      "Informal configurations",
+      "No baseline configurations"
+    ]
+  },
+  {
+    "id": "f12",
+    "domain": "Configuration Management",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is the use of unauthorized software prevented through allowlisting or other controls?",
+    "controls": ["CM.L2-3.4.8"],
+    "opts": [
+      "Yes — application allowlisting enforced",
+      "Software restrictions on most systems",
+      "Partial restrictions",
+      "No software controls"
+    ]
+  },
+  {
+    "id": "f13",
+    "domain": "Configuration Management",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are changes to system configurations tracked, reviewed, and approved before implementation?",
+    "controls": ["CM.L2-3.4.3"],
+    "opts": [
+      "Yes — formal change management process",
+      "Changes tracked but approval is informal",
+      "Ad hoc changes with some documentation",
+      "No change management process"
+    ]
+  },
+  {
+    "id": "f14",
+    "domain": "Identification & Authentication",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are all users uniquely identified and authenticated before accessing organizational systems?",
+    "controls": ["IA.L2-3.5.1"],
+    "opts": [
+      "Yes — unique accounts with strong authentication",
+      "Unique accounts but shared credentials exist",
+      "Some shared accounts remain",
+      "No unique identification"
+    ]
+  },
+  {
+    "id": "f15",
+    "domain": "Identification & Authentication",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization enforce password complexity and rotation requirements?",
+    "controls": ["IA.L2-3.5.7"],
+    "opts": [
+      "Yes — complexity and rotation enforced via policy and technology",
+      "Complexity enforced, rotation inconsistent",
+      "Basic password requirements",
+      "No password policy"
+    ]
+  },
+  {
+    "id": "f16",
+    "domain": "Incident Response",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization have a documented incident response plan that is tested at least annually?",
+    "controls": ["IR.L2-3.6.1"],
+    "opts": [
+      "Yes — documented, tested annually, with after-action reviews",
+      "Plan exists but not regularly tested",
+      "Informal response procedures",
+      "No incident response plan"
+    ]
+  },
+  {
+    "id": "f17",
+    "domain": "Incident Response",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization report cyber incidents to appropriate authorities (e.g., DIBNet) within required timeframes?",
+    "controls": ["IR.L2-3.6.2"],
+    "opts": [
+      "Yes — reporting procedures documented and personnel trained",
+      "Aware of requirements but procedures not formalized",
+      "Limited awareness of reporting requirements",
+      "No incident reporting procedures"
+    ]
+  },
+  {
+    "id": "f18",
+    "domain": "Maintenance",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is system maintenance performed and logged according to manufacturer recommendations?",
+    "controls": ["MA.L2-3.7.1"],
+    "opts": [
+      "Yes — scheduled maintenance with complete logs",
+      "Maintenance performed but logging is incomplete",
+      "Ad hoc maintenance only",
+      "No maintenance program"
+    ]
+  },
+  {
+    "id": "f19",
+    "domain": "Maintenance",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is nonlocal maintenance (remote maintenance) authorized, monitored, and controlled?",
+    "controls": ["MA.L2-3.7.5"],
+    "opts": [
+      "Yes — remote maintenance sessions authorized and monitored",
+      "Remote maintenance allowed with some controls",
+      "Remote maintenance without monitoring",
+      "No controls on remote maintenance"
+    ]
+  },
+  {
+    "id": "f20",
+    "domain": "Media Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization protect and control media (USB, external drives) containing CUI?",
+    "controls": ["MP.L2-3.8.1"],
+    "opts": [
+      "Yes — media policy enforced with encryption and tracking",
+      "Media controls for most devices",
+      "Basic media awareness only",
+      "No media protection controls"
+    ]
+  },
+  {
+    "id": "f21",
+    "domain": "Media Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is CUI on media sanitized or destroyed before disposal or reuse?",
+    "controls": ["MP.L2-3.8.3"],
+    "opts": [
+      "Yes — documented sanitization/destruction procedures",
+      "Sanitization for most media",
+      "Inconsistent media disposal",
+      "No sanitization procedures"
+    ]
+  },
+  {
+    "id": "f22",
+    "domain": "Personnel Security",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are personnel screened before granting access to systems containing CUI?",
+    "controls": ["PS.L2-3.9.1"],
+    "opts": [
+      "Yes — background checks before access granted",
+      "Background checks for most positions",
+      "Basic screening only",
+      "No personnel screening"
+    ]
+  },
+  {
+    "id": "f23",
+    "domain": "Personnel Security",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is access promptly revoked when personnel are terminated or transferred?",
+    "controls": ["PS.L2-3.9.2"],
+    "opts": [
+      "Yes — same-day revocation with documented procedures",
+      "Revocation within a few days",
+      "Inconsistent revocation process",
+      "No formal revocation process"
+    ]
+  },
+  {
+    "id": "f24",
+    "domain": "Physical Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are physical access controls in place to limit access to systems and facilities?",
+    "controls": ["PE.L2-3.10.1"],
+    "opts": [
+      "Yes — badge/key access with visitor logs",
+      "Locked facilities but limited logging",
+      "Basic physical security",
+      "No physical access controls"
+    ]
+  },
+  {
+    "id": "f25",
+    "domain": "Physical Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are visitors escorted and their access monitored in areas where CUI is processed or stored?",
+    "controls": ["PE.L2-3.10.3"],
+    "opts": [
+      "Yes — visitor escort policy enforced",
+      "Visitors escorted in most areas",
+      "Visitors sometimes unescorted",
+      "No visitor management"
+    ]
+  },
+  {
+    "id": "f26",
+    "domain": "Risk Assessment",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization perform periodic risk assessments to identify threats and vulnerabilities?",
+    "controls": ["RA.L2-3.11.1"],
+    "opts": [
+      "Yes — annual risk assessments with documented findings",
+      "Risk assessments performed but not regularly",
+      "Informal risk awareness only",
+      "No risk assessment process"
+    ]
+  },
+  {
+    "id": "f27",
+    "domain": "Risk Assessment",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are vulnerability scans performed regularly on organizational systems?",
+    "controls": ["RA.L2-3.11.2"],
+    "opts": [
+      "Yes — scheduled scans with remediation tracking",
+      "Periodic scans without consistent follow-up",
+      "Scans performed occasionally",
+      "No vulnerability scanning"
+    ]
+  },
+  {
+    "id": "f28",
+    "domain": "Risk Assessment",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are identified vulnerabilities remediated in accordance with risk prioritization?",
+    "controls": ["RA.L2-3.11.3"],
+    "opts": [
+      "Yes — prioritized remediation with tracking",
+      "Remediation for critical findings only",
+      "Ad hoc remediation",
+      "No remediation process"
+    ]
+  },
+  {
+    "id": "f29",
+    "domain": "Security Assessment",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization periodically assess the adequacy of its security controls?",
+    "controls": ["CA.L2-3.12.1"],
+    "opts": [
+      "Yes — annual assessments with corrective actions",
+      "Assessments performed but not regularly",
+      "Informal self-assessments only",
+      "No security assessments"
+    ]
+  },
+  {
+    "id": "f30",
+    "domain": "Security Assessment",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization have a System Security Plan (SSP) that describes system boundaries, environments, and security requirements?",
+    "controls": ["CA.L2-3.12.4"],
+    "opts": [
+      "Yes — current SSP covering all CUI systems",
+      "SSP exists but is outdated",
+      "Partial documentation only",
+      "No SSP"
+    ]
+  },
+  {
+    "id": "f31",
+    "domain": "System & Communications Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization monitor, control, and protect communications at system boundaries?",
+    "controls": ["SC.L2-3.13.1"],
+    "opts": [
+      "Yes — firewalls, IDS/IPS, and boundary monitoring",
+      "Firewalls in place, limited monitoring",
+      "Basic boundary controls",
+      "No boundary protection"
+    ]
+  },
+  {
+    "id": "f32",
+    "domain": "System & Communications Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is CUI encrypted at rest and in transit?",
+    "controls": ["SC.L2-3.13.8", "SC.L2-3.13.11"],
+    "opts": [
+      "Yes — FIPS-validated encryption for both",
+      "Encryption in transit; at rest is partial",
+      "Some encryption but not comprehensive",
+      "No encryption strategy"
+    ]
+  },
+  {
+    "id": "f33",
+    "domain": "System & Communications Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are collaborative computing devices (e.g., cameras, microphones) managed and access-controlled?",
+    "controls": ["SC.L2-3.13.12"],
+    "opts": [
+      "Yes — devices managed with disable controls",
+      "Most devices managed",
+      "Basic awareness only",
+      "No management of collaborative devices"
+    ]
+  },
+  {
+    "id": "f34",
+    "domain": "System & Communications Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is VoIP and session-based communication secured?",
+    "controls": ["SC.L2-3.13.14"],
+    "opts": [
+      "Yes — VoIP encrypted and monitored",
+      "VoIP partially secured",
+      "Basic VoIP with no specific security",
+      "VoIP security not addressed"
+    ]
+  },
+  {
+    "id": "f35",
+    "domain": "System & Information Integrity",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization identify, report, and correct system flaws in a timely manner?",
+    "controls": ["SI.L2-3.14.1"],
+    "opts": [
+      "Yes — patch management with defined SLAs",
+      "Patching performed but not on schedule",
+      "Ad hoc patching",
+      "No patch management"
+    ]
+  },
+  {
+    "id": "f36",
+    "domain": "System & Information Integrity",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization provide protection from malicious code at appropriate locations?",
+    "controls": ["SI.L2-3.14.2"],
+    "opts": [
+      "Yes — endpoint protection on all systems with central management",
+      "Antivirus on most systems",
+      "Basic antivirus with no central management",
+      "No malware protection"
+    ]
+  },
+  {
+    "id": "f37",
+    "domain": "System & Information Integrity",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are security alerts and advisories monitored from trusted sources?",
+    "controls": ["SI.L2-3.14.3"],
+    "opts": [
+      "Yes — subscribed to CISA, vendor advisories, with response process",
+      "Monitoring some sources",
+      "Informal awareness only",
+      "No advisory monitoring"
+    ]
+  },
+  {
+    "id": "f38",
+    "domain": "System & Information Integrity",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is inbound and outbound communications traffic monitored for anomalies?",
+    "controls": ["SI.L2-3.14.6"],
+    "opts": [
+      "Yes — network monitoring with alerting",
+      "Some traffic monitoring",
+      "Basic monitoring only",
+      "No traffic monitoring"
+    ]
+  },
+  {
+    "id": "f39",
+    "domain": "System & Information Integrity",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization perform periodic scans and real-time monitoring of organizational systems?",
+    "controls": ["SI.L2-3.14.7"],
+    "opts": [
+      "Yes — continuous monitoring with periodic scans",
+      "Periodic scans without real-time monitoring",
+      "Occasional scans only",
+      "No scanning or monitoring"
+    ]
+  },
+  {
+    "id": "f40",
+    "domain": "Contingency Planning",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization have a documented contingency plan for CUI systems?",
+    "controls": ["RE.L2-3.8.9"],
+    "opts": [
+      "Yes — documented, tested, and updated annually",
+      "Plan exists but not tested",
+      "Informal recovery procedures",
+      "No contingency plan"
+    ]
+  },
+  {
+    "id": "f41",
+    "domain": "Contingency Planning",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are backups of CUI performed regularly and stored securely?",
+    "controls": ["RE.L2-3.8.9"],
+    "opts": [
+      "Yes — automated backups with offsite/encrypted storage",
+      "Regular backups, storage could be improved",
+      "Inconsistent backups",
+      "No backup procedures"
+    ]
+  },
+  {
+    "id": "f42",
+    "domain": "Supply Chain Risk Management",
+    "frameworks": ["CMMC"],
+    "text": "Does your organization assess cybersecurity risks in the supply chain?",
+    "controls": ["SC.L2-3.13.1"],
+    "opts": [
+      "Yes — formal supply chain risk management program",
+      "Some supplier assessments performed",
+      "Informal awareness of supply chain risks",
+      "No supply chain risk management"
+    ]
+  },
+  {
+    "id": "f43",
+    "domain": "Supply Chain Risk Management",
+    "frameworks": ["CMMC"],
+    "text": "Do your contracts with suppliers include cybersecurity requirements for CUI handling?",
+    "controls": ["SC.L2-3.13.1"],
+    "opts": [
+      "Yes — DFARS 252.204-7012 flowed down to all applicable suppliers",
+      "Requirements in most contracts",
+      "Requirements in some contracts",
+      "No contractual cybersecurity requirements"
+    ]
+  },
+  {
+    "id": "f44",
+    "domain": "Governance",
+    "frameworks": ["CMMC"],
+    "text": "Has your organization completed a CMMC self-assessment and uploaded results to SPRS?",
+    "controls": ["CA.L2-3.12.1"],
+    "opts": [
+      "Yes — current SPRS score on file",
+      "Self-assessment completed but not uploaded",
+      "Assessment in progress",
+      "No self-assessment performed"
+    ]
+  },
+  {
+    "id": "f45",
+    "domain": "Governance",
+    "frameworks": ["CMMC"],
+    "text": "Does your organization have a designated CMMC compliance lead or team?",
+    "controls": ["CA.L2-3.12.1"],
+    "opts": [
+      "Yes — designated team with defined responsibilities",
+      "Single point of contact assigned",
+      "Responsibilities shared informally",
+      "No one assigned"
+    ]
+  },
+  {
+    "id": "f46",
+    "domain": "Data Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Does your organization identify and mark CUI in accordance with NIST SP 800-171?",
+    "controls": ["MP.L2-3.8.4"],
+    "opts": [
+      "Yes — CUI marking policy and implementation",
+      "CUI identified but marking inconsistent",
+      "Some awareness of CUI marking requirements",
+      "No CUI marking program"
+    ]
+  },
+  {
+    "id": "f47",
+    "domain": "Data Protection",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is CUI shared with external parties only through approved and secure methods?",
+    "controls": ["SC.L2-3.13.8"],
+    "opts": [
+      "Yes — encrypted channels with access controls",
+      "Secure sharing for most communications",
+      "Basic email with some precautions",
+      "No secure sharing methods"
+    ]
+  },
+  {
+    "id": "f48",
+    "domain": "Network Security",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Is your network segmented to isolate CUI from general-purpose computing?",
+    "controls": ["SC.L2-3.13.4"],
+    "opts": [
+      "Yes — CUI enclaves with enforced boundaries",
+      "Some segmentation in place",
+      "Flat network with VLAN awareness",
+      "No network segmentation"
+    ]
+  },
+  {
+    "id": "f49",
+    "domain": "Network Security",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Are DNS, DHCP, and other network services securely configured and monitored?",
+    "controls": ["SC.L2-3.13.1"],
+    "opts": [
+      "Yes — hardened and monitored network services",
+      "Securely configured but limited monitoring",
+      "Default configurations with basic security",
+      "Network services not managed"
+    ]
+  },
+  {
+    "id": "f50",
+    "domain": "Dual-Framework Efficiency",
+    "frameworks": ["CMMC", "NIST-800-171"],
+    "text": "Has your organization mapped its existing NIST 800-171 controls to CMMC Level 2 requirements to identify coverage gaps?",
+    "controls": ["CA.L2-3.12.1"],
+    "opts": [
+      "Yes — complete mapping with gap analysis",
+      "Partial mapping completed",
+      "Aware of the overlap but no formal mapping",
+      "No mapping performed"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "headline": "Your HIPAA Risk Readiness Snapshot",
+  "subhead": "Built by GreyLee Services Group — federal-grade rigor, right-sized for small practices.",
+  "kpis": [
+    {
+      "key": "ocrExposure",
+      "label": "OCR Enforcement Exposure",
+      "description": "Count of critical findings tied to historically-enforced HIPAA controls"
+    },
+    {
+      "key": "ransomwareReadiness",
+      "label": "Ransomware Readiness",
+      "description": "Composite score based on backup, MFA, email security, and incident response findings"
+    },
+    {
+      "key": "cyberInsurancePosture",
+      "label": "Cyber Insurance Posture",
+      "description": "Count of findings that map to common cyber insurance questionnaire categories"
+    }
+  ],
+  "ctas": {
+    "primary": {
+      "label": "Schedule a HIPAA Risk Readiness Consultation",
+      "urlEnvVar": "NEXT_PUBLIC_PRACTICE_CONSULT_URL"
+    },
+    "secondary": {
+      "label": "Learn how GreyLee helps small practices",
+      "url": "https://greyleegroup.com/healthcare-practices"
+    }
+  },
+  "safeHarborNote": "Findings flagged with the shield icon trigger HITECH safe harbor — closing them removes breach notification obligations.",
+  "glossary": {
+    "HIPAA": "Health Insurance Portability and Accountability Act — federal law requiring safeguards for protected health information (PHI)",
+    "HITECH": "Health Information Technology for Economic and Clinical Health Act — strengthens HIPAA enforcement and breach notification",
+    "PHI": "Protected Health Information — individually identifiable health information held or transmitted by a covered entity",
+    "BAA": "Business Associate Agreement — contract requiring vendors who handle PHI to comply with HIPAA",
+    "OCR": "Office for Civil Rights — the HHS division that enforces HIPAA"
+  }
+}

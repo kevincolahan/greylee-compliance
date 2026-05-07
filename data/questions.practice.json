@@ -1,0 +1,184 @@
+[
+  {
+    "id": "p1",
+    "domain": "Risk & Governance",
+    "frameworks": ["HIPAA"],
+    "text": "In the past 12 months, has your practice completed a written review of where patient information is stored, who can access it, and what could go wrong?",
+    "controls": ["HIPAA-AS-01"],
+    "opts": [
+      "Yes — completed and documented within the past 12 months",
+      "Yes — but it is older than 12 months",
+      "Started but never finished, or only informal notes",
+      "No formal review has been done"
+    ]
+  },
+  {
+    "id": "p2",
+    "domain": "Access Control",
+    "frameworks": ["HIPAA"],
+    "text": "When staff log into your EHR, email, or remote access tools, do they need a second step beyond their password — like a text code, app prompt, or fingerprint?",
+    "controls": ["HIPAA-TS-01"],
+    "opts": [
+      "Yes — required on every system that touches patient data",
+      "Required on most systems, with a few exceptions",
+      "Required on email only, or only some staff",
+      "Not required anywhere"
+    ]
+  },
+  {
+    "id": "p3",
+    "domain": "Data Protection",
+    "frameworks": ["HIPAA", "HITECH"],
+    "text": "Are your office laptops, desktops, and portable drives encrypted, so that if one is lost or stolen the patient data on it cannot be read?",
+    "controls": ["HIPAA-TS-04"],
+    "opts": [
+      "Yes — every device is encrypted and verified",
+      "Most devices are encrypted; some older ones are not",
+      "Only some devices, or unsure how to verify",
+      "No encryption is in place"
+    ]
+  },
+  {
+    "id": "p4",
+    "domain": "Contingency Planning",
+    "frameworks": ["HIPAA"],
+    "text": "Does your practice have automated backups of patient records, and have you successfully tested restoring from a backup in the past 12 months?",
+    "controls": ["HIPAA-AS-08"],
+    "opts": [
+      "Yes — automated backups, and a successful restore test in the past 12 months",
+      "Backups exist but a restore has not been tested",
+      "Manual or partial backups only",
+      "No backups, or unsure"
+    ]
+  },
+  {
+    "id": "p5",
+    "domain": "Incident Response",
+    "frameworks": ["HIPAA", "HITECH"],
+    "text": "If your practice was hit with ransomware or a breach tomorrow, do you have a written plan that names who to call, in what order, and within what timeframe?",
+    "controls": ["HIPAA-AS-12"],
+    "opts": [
+      "Yes — written plan with named roles and tested procedures",
+      "Plan exists but has never been tested",
+      "Informal procedures only",
+      "No plan in place"
+    ]
+  },
+  {
+    "id": "p6",
+    "domain": "Vendor & Contract Mgmt",
+    "frameworks": ["HIPAA"],
+    "text": "Do you have signed Business Associate Agreements (BAAs) on file with every vendor that touches patient data — EHR, billing service, IT MSP, cloud backup, clearinghouse, transcription, and so on?",
+    "controls": ["HIPAA-AS-16"],
+    "opts": [
+      "Yes — complete vendor list with current BAAs on file",
+      "BAAs in place for most vendors; some gaps",
+      "BAAs only with the major vendors",
+      "No formal BAA inventory or process"
+    ]
+  },
+  {
+    "id": "p7",
+    "domain": "Awareness & Training",
+    "frameworks": ["HIPAA"],
+    "text": "Has every staff member who handles patient information completed HIPAA security training in the past 12 months, with records on file?",
+    "controls": ["HIPAA-AS-05"],
+    "opts": [
+      "Yes — every staff member, with completion records",
+      "Most staff trained, with partial records",
+      "Training happens occasionally, no consistent records",
+      "No formal HIPAA security training"
+    ]
+  },
+  {
+    "id": "p8",
+    "domain": "Media Protection",
+    "frameworks": ["HIPAA"],
+    "text": "Do you have a documented process for what staff should do — and who they should notify — within 1 hour of losing a phone, laptop, or USB drive that may have contained patient information?",
+    "controls": ["HIPAA-PS-04"],
+    "opts": [
+      "Yes — documented and staff have been trained on it",
+      "Process exists but staff are not familiar with it",
+      "Informal expectation only",
+      "No process"
+    ]
+  },
+  {
+    "id": "p9",
+    "domain": "System & Communications Protection",
+    "frameworks": ["HIPAA"],
+    "text": "Is staff email protected against phishing and business email compromise, with mailbox-level multi-factor authentication and external sender warnings?",
+    "controls": ["HIPAA-TS-02"],
+    "opts": [
+      "Yes — MFA, anti-phishing, and external sender warnings all in place",
+      "MFA in place; anti-phishing protections partial",
+      "Basic email security only",
+      "Standard email with no extra protections"
+    ]
+  },
+  {
+    "id": "p10",
+    "domain": "Access Control",
+    "frameworks": ["HIPAA"],
+    "text": "When a staff member leaves the practice, is there a written checklist that ensures their EHR, email, and remote access are revoked the same day?",
+    "controls": ["HIPAA-AS-03"],
+    "opts": [
+      "Yes — same-day checklist and verified for every departure",
+      "Checklist exists but not always completed",
+      "Informal — IT or office manager handles it ad hoc",
+      "No process"
+    ]
+  },
+  {
+    "id": "p11",
+    "domain": "Audit & Accountability",
+    "frameworks": ["HIPAA"],
+    "text": "Do your EHR, email, and remote access systems record who accessed what, and does someone at the practice review those logs monthly for unusual activity?",
+    "controls": ["HIPAA-TS-03"],
+    "opts": [
+      "Yes — logs exist and are reviewed monthly",
+      "Logs exist but are reviewed rarely or only after incidents",
+      "Logs exist but no one reviews them",
+      "Logging is minimal or unknown"
+    ]
+  },
+  {
+    "id": "p12",
+    "domain": "Vendor & Contract Mgmt",
+    "frameworks": ["HIPAA"],
+    "text": "Do you maintain a current list of every technology vendor your practice uses, what patient data they have access to, and when each BAA expires?",
+    "controls": ["HIPAA-AS-17"],
+    "opts": [
+      "Yes — current inventory with data scope and BAA expirations tracked",
+      "Inventory exists but is not consistently updated",
+      "Partial — major vendors only",
+      "No inventory"
+    ]
+  },
+  {
+    "id": "p13",
+    "domain": "Mobile Device & BYOD",
+    "frameworks": ["HIPAA"],
+    "text": "Is there a written policy staff must follow when accessing patient information from a personal phone or laptop, including encryption, screen lock, and remote wipe?",
+    "controls": ["HIPAA-TS-04", "HIPAA-PS-02"],
+    "opts": [
+      "Yes — written policy with technical controls enforced",
+      "Policy exists but enforcement is inconsistent",
+      "Informal expectation only",
+      "Personal devices are used freely with no policy"
+    ]
+  },
+  {
+    "id": "p14",
+    "domain": "Breach Notification Readiness",
+    "frameworks": ["HIPAA", "HITECH"],
+    "text": "If patient information was compromised, does your practice know the timelines and required steps under HIPAA, HITECH, and your state breach notification law?",
+    "controls": ["HITECH-BN-01"],
+    "opts": [
+      "Yes — documented in our incident response plan with named roles",
+      "Generally aware but not documented",
+      "Aware of HIPAA only, not HITECH or state law",
+      "Not familiar with the requirements"
+    ]
+  }
+]

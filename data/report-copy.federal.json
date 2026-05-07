@@ -1,0 +1,38 @@
+{
+  "headline": "Your CMMC & NIST 800-171 Compliance Snapshot",
+  "subhead": "Built by GreyLee Services Group — helping federal subcontractors protect CUI and win contracts.",
+  "kpis": [
+    {
+      "key": "sprsEstimate",
+      "label": "Estimated SPRS Score",
+      "description": "Projected SPRS score based on your self-assessment responses"
+    },
+    {
+      "key": "cmmcGaps",
+      "label": "CMMC Level 2 Gaps",
+      "description": "Number of CMMC Level 2 controls with identified gaps"
+    },
+    {
+      "key": "dualFrameworkEfficiency",
+      "label": "Dual-Framework Efficiency",
+      "description": "Percentage of controls that satisfy both CMMC and NIST 800-171 simultaneously"
+    }
+  ],
+  "ctas": {
+    "primary": {
+      "label": "Schedule a CMMC Readiness Consultation",
+      "url": "NEXT_PUBLIC_FEDERAL_CONSULT_URL"
+    },
+    "secondary": {
+      "label": "Learn how GreyLee supports federal subcontractors",
+      "url": "https://greyleegroup.com/federal"
+    }
+  },
+  "glossary": {
+    "CUI": "Controlled Unclassified Information — sensitive but unclassified information requiring safeguarding",
+    "CMMC": "Cybersecurity Maturity Model Certification — DoD framework for protecting CUI in the defense supply chain",
+    "SPRS": "Supplier Performance Risk System — where self-assessment scores are uploaded for DoD review",
+    "DFARS": "Defense Federal Acquisition Regulation Supplement — contract clauses requiring CUI protection",
+    "DIBNet": "Defense Industrial Base Network — DoD portal for reporting cyber incidents"
+  }
+}
