@@ -6,9 +6,11 @@ import type { AudienceMode } from "@/lib/mode";
 export default function LeadCapture({
   mode,
   onClose,
+  onEmailCaptured,
 }: {
   mode: AudienceMode;
   onClose: () => void;
+  onEmailCaptured?: (email: string) => void;
 }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -36,6 +38,7 @@ export default function LeadCapture({
       }
 
       setSubmitted(true);
+      if (onEmailCaptured) onEmailCaptured(email);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Something went wrong");
     } finally {

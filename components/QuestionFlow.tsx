@@ -11,6 +11,7 @@ export default function QuestionFlow({ mode }: { mode: AudienceMode }) {
   const [currentIndex, setCurrentIndex] = useState(-1); // -1 = hero
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [done, setDone] = useState(false);
+  const [capturedEmail, setCapturedEmail] = useState("");
 
   useEffect(() => {
     const file =
@@ -23,7 +24,15 @@ export default function QuestionFlow({ mode }: { mode: AudienceMode }) {
   }, [mode]);
 
   if (done && questions.length > 0) {
-    return <GapReport mode={mode} questions={questions} answers={answers} />;
+    return (
+      <GapReport
+        mode={mode}
+        questions={questions}
+        answers={answers}
+        capturedEmail={capturedEmail}
+        onEmailCaptured={setCapturedEmail}
+      />
+    );
   }
 
   if (currentIndex === -1) {

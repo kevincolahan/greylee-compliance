@@ -5,6 +5,7 @@ import type { AudienceMode } from "@/lib/mode";
 import type { Question, Answer } from "@/lib/scoring";
 import { computeScore } from "@/lib/scoring";
 import LeadCapture from "./LeadCapture";
+import HandoffModal from "./HandoffModal";
 
 import federalCopy from "@/data/report-copy.federal.json";
 import practiceCopy from "@/data/report-copy.practice.json";
@@ -13,14 +14,19 @@ export default function GapReport({
   mode,
   questions,
   answers,
+  capturedEmail,
+  onEmailCaptured,
 }: {
   mode: AudienceMode;
   questions: Question[];
   answers: Answer[];
+  capturedEmail: string;
+  onEmailCaptured: (email: string) => void;
 }) {
   const result = computeScore(questions, answers, mode);
   const copy = mode === "practice" ? practiceCopy : federalCopy;
   const [showLead, setShowLead] = useState(false);
+  const [showHandoff, setShowHandoff] = useState(false);
 
   const severityColor: Record<string, string> = {
     CRITICAL: "bg-red-100 text-red-800",
@@ -199,6 +205,33 @@ export default function GapReport({
           </a>
         </div>
 
+        {/* Handoff CTA (practice mode only) */}
+        {mode === "practice" && (
+          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl shadow-sm border border-amber-200 p-6 mb-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Want this tracked, fixed, and audit-ready?
+            </h3>
+            <p className="text-sm text-gray-600 mb-4">
+              Start a 14-day free trial of the Healthcare Practice tracker.
+              We&apos;ll auto-create your account with all findings pre-loaded.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <button
+                onClick={() => setShowHandoff(true)}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-amber-500 text-white font-semibold hover:bg-amber-600 transition-colors"
+              >
+                Start free trial
+              </button>
+              <button
+                onClick={() => setShowLead(true)}
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-amber-500 text-amber-600 font-semibold hover:bg-amber-50 transition-colors"
+              >
+                Just send me the report
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Glossary */}
         <details className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 mb-8">
           <summary className="cursor-pointer font-medium text-gray-700">
@@ -217,7 +250,23 @@ export default function GapReport({
 
       {/* Lead Capture Modal */}
       {showLead && (
-        <LeadCapture mode={mode} onClose={() => setShowLead(false)} />
+        <LeadCapture
+          mode={mode}
+          onClose={() => setShowLead(false)}
+          onEmailCaptured={onEmailCaptured}
+        />
+      )}
+
+      {/* Handoff Modal */}
+      {showHandoff && (
+        <HandoffModal
+          email={capturedEmail}
+          answers={answers.map((a) => ({
+            questionId: a.questionId,
+            answerIndex: a.selectedIndex,
+          }))}
+          onClose={() => setShowHandoff(false)}
+        />
       )}
     </div>
   );
